@@ -1,0 +1,46 @@
+[versions]
+
+agp = "8.13.2"
+kotlin = "2.3.20"
+
+compose = "1.10.2"
+
+androidx-core = "1.18.0"
+androidx-activity = "1.13.0"
+androidx-lifecycle = "2.10.0"
+
+kotlinx-coroutines = "1.10.2"
+
+koin = "4.2.1"                      # https://github.com/InsertKoinIO/koin
+ktor = "3.4.2"                      # https://github.com/ktorio/ktor
+voyager = "1.1.0-beta03"            # https://github.com/adrielcafe/voyager
+
+[libraries]
+
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
+androidx-activity = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-screenmodel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
+voyager-tab-navigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "agp" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

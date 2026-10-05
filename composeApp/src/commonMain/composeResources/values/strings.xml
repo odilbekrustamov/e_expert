@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">E-Expert</string>
+
+    <string name="login_title">Tizimga kirish</string>
+    <string name="login_username_label">Foydalanuvchi nomi</string>
+    <string name="login_password_label">Parol</string>
+    <string name="login_button">Kirish</string>
+
+    <string name="tab_home">Bosh sahifa</string>
+    <string name="tab_search">Qidiruv</string>
+    <string name="tab_favorites">Sevimlilar</string>
+    <string name="tab_profile">Profil</string>
+</resources>

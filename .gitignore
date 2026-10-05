@@ -1,0 +1,21 @@
+*.class
+.gradle/
+captures/
+.DS_Store
+/build
+/composeApp/build
+/iosApp/build
+/local.properties
+*.hprof
+.cxx/
+.kotlin/
+.idea/
+*.iml
+
+# Xcode
+**/xcuserdata/
+**/*.xcodeproj/*
+!**/*.xcodeproj/project.pbxproj
+!**/*.xcodeproj/xcshareddata/
+!**/*.xcworkspace/contents.xcworkspacedata
+**/*.xcworkspace/xcuserdata/
