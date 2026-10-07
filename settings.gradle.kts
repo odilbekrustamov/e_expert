@@ -1,32 +1,31 @@
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+rootProject.name = "e_expert"
+
 pluginManagement {
     repositories {
         google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-                includeGroupByRegex("android.*")
+            mavenContent {
+                includeGroupAndSubgroups("com.android")
+                includeGroupAndSubgroups("com.google")
+                includeGroupAndSubgroups("androidx")
             }
         }
-        gradlePluginPortal()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
 dependencyResolutionManagement {
     repositories {
         google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-                includeGroupByRegex("android.*")
+            mavenContent {
+                includeGroupAndSubgroups("com.android")
+                includeGroupAndSubgroups("com.google")
+                includeGroupAndSubgroups("androidx")
             }
         }
         mavenCentral()
     }
 }
 
-rootProject.name = "e_expert"
 include(":composeApp")
+include(":androidApp")

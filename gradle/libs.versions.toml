@@ -1,46 +1,27 @@
 [versions]
-
-agp = "8.13.2"
-kotlin = "2.3.20"
-
-compose = "1.10.2"
-
-androidx-core = "1.18.0"
-androidx-activity = "1.13.0"
+agp = "9.3.1"
+kotlin = "2.4.20"
+compose-multiplatform = "1.12.1"
+compose-material3 = "1.9.0"
+androidx-activityCompose = "1.12.0"
 androidx-lifecycle = "2.10.0"
-
-kotlinx-coroutines = "1.10.2"
-
-koin = "4.2.1"                      # https://github.com/InsertKoinIO/koin
-ktor = "3.4.2"                      # https://github.com/ktorio/ktor
-voyager = "1.1.0-beta03"            # https://github.com/adrielcafe/voyager
+junit = "4.13.2"
 
 [libraries]
-
-androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
-androidx-activity = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
-androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
-
-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
-
-koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
-koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
-
-ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
-ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
-ktor-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
-ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
-ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
-
-voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
-voyager-screenmodel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
-voyager-tab-navigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
-voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
-voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-lifecycle-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtime-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+junit = { module = "junit:junit", version.ref = "junit" }
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-multiplatform" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose-multiplatform" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "compose-material3" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose-multiplatform" }
+compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "compose-multiplatform" }
+compose-components-uiToolingPreview = { module = "org.jetbrains.compose.components:components-ui-tooling-preview", version.ref = "compose-multiplatform" }
 
 [plugins]
-
-android-application = { id = "com.android.application", version.ref = "agp" }
-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-compose = { id = "org.jetbrains.compose", version.ref = "compose" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

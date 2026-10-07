@@ -4,6 +4,7 @@ captures/
 .DS_Store
 /build
 /composeApp/build
+/androidApp/build
 /iosApp/build
 /local.properties
 *.hprof
